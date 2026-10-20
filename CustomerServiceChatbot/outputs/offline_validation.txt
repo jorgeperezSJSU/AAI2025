@@ -1,0 +1,8 @@
+test_catalog_and_missing_order (test_chatbot.ChatbotTests.test_catalog_and_missing_order) ... ok
+test_multiple_tool_calls (test_chatbot.ChatbotTests.test_multiple_tool_calls) ... ok
+test_routes_memory_and_isolation (test_chatbot.ChatbotTests.test_routes_memory_and_isolation) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.047s
+
+OK
