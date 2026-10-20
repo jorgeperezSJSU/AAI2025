@@ -1,0 +1,75 @@
+LIVE GOOGLE AI DEMO
+2026-10-20T05:21:32.023265+00:00
+Model: gemini-3.8-flash
+Store data: fictional historical classroom records
+
+TURN 1
+USER: I need a laptop under $1500. Which options do you recommend?
+AGENT: PRODUCT
+TOOLS: recommend_laptops
+RESPONSE: Here are the laptops available under your $1,500 budget:
+
+* **GammaAir X** – $1,399 (Estimated shipping: 7 days)
+* **AlphaBook Pro** – $1,499 (Estimated shipping: 2 days)
+
+Would you like more details on either of these models?
+Remembered customer turns: 1
+Routing + retained-turn check: PASS
+
+TURN 2
+USER: Of those options, which ships fastest? Keep my original budget.
+AGENT: PRODUCT
+TOOLS: (none this turn)
+RESPONSE: Between the two options within your $1,500 budget, the **AlphaBook Pro** ships the fastest:
+
+* **AlphaBook Pro** – $1,499 (Estimated shipping: 2 days)
+
+Let me know if you would like assistance with anything else!
+Remembered customer turns: 2
+Routing + retained-turn check: PASS
+
+TURN 3
+USER: How much does that one cost?
+AGENT: PRODUCT
+TOOLS: (none this turn)
+RESPONSE: The **AlphaBook Pro** costs **$1,499**.
+Remembered customer turns: 3
+Routing + retained-turn check: PASS
+
+TURN 4
+USER: If I buy it, can I return it 10 days after delivery?
+AGENT: REFUND
+TOOLS: get_refund_policy
+RESPONSE: Yes, you would be within the return window, as TechHaven allows returns within **30 days of delivery**. 
+
+However, eligibility is conditional:
+* The laptop must be **undamaged** and in its **original packaging**.
+* You must provide **proof of purchase**.
+
+Please note that our store staff must inspect and officially approve all returns and refunds, as I cannot approve or process refunds myself.
+Remembered customer turns: 4
+Routing + retained-turn check: PASS
+
+TURN 5
+USER: Show me the details and status of order ORD-7311.
+AGENT: ORDER
+TOOLS: get_order_details
+RESPONSE: Here are the details for order **ORD-7311**:
+
+* **Product:** NanoEdge Flex
+* **Quantity:** 2
+* **Historical Delivery Date Record:** 2024-10-19 (historical record only; not live tracking or proof of delivery)
+* **Status:** Not recorded in source data
+Remembered customer turns: 5
+Routing + retained-turn check: PASS
+
+TURN 6
+USER: How many laptops are in that order?
+AGENT: ORDER
+TOOLS: (none this turn)
+RESPONSE: There are **2** laptops in that order.
+Remembered customer turns: 6
+Routing + retained-turn check: PASS
+
+New-thread isolation: PASS
+Manually review context: turn 2 AlphaBook Pro; turn 3 $1499; turn 6 quantity 2. Counts check saved history, not semantic correctness.
